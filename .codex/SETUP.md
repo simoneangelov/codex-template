@@ -25,14 +25,14 @@ Project name: [PROJECT_NAME]
 One-line description: [ONE_SENTENCE_DESCRIPTION e.g. "a Next.js app that does X for Y"]
 Package manager: [e.g. pnpm, npm, yarn]
 Tech stack: [e.g. Next.js 14, TypeScript, Prisma, PostgreSQL, Vitest, Playwright]
-Test commands: [e.g. pnpm test for unit tests, pnpm test:e2e for E2E]
+Test commands: [e.g. pnpm test for unit tests, pnpm test:e2e for E2E — or "none configured, use exploratory testing"]
 
 Please do the following:
 
 1. Read my product spec at .codex/docs/SPEC.pdf.
 2. Copy AGENTS-TEMPLATE.md to AGENTS.md — replace [PROJECT_NAME] with the project name, [PROJECT_DESCRIPTION] with the one-line description, and [PACKAGE_MANAGER] with the package manager above. Do not modify AGENTS-TEMPLATE.md.
 3. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
-4. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and spec (e.g. prefer server components, avoid new dependencies without justification).
+4. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and product spec in SPEC.pdf (e.g. prefer server components, avoid new dependencies without justification).
 5. Rewrite .codex/briefs/test-runner.md — replace the placeholder test tooling section with the actual test framework and commands above.
 
 Do not modify any other files.
