@@ -34,10 +34,6 @@ Please do the following:
 3. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
 4. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and spec (e.g. prefer server components, avoid new dependencies without justification).
 5. Rewrite .codex/briefs/test-runner.md — replace the placeholder test tooling section with the actual test framework and commands above.
-6. Update .codex/workflows/implement-issue.md — add these git conventions to the branch creation and commit steps:
-   - Branch naming: <type>/<issue-id>-short-desc (e.g. feat/CC-123-add-login-page) — types: feat, fix, docs, chore
-   - Commit format: <type>(<scope>): <subject> (<Magic-Word> <issue-id>) — types: feat, fix, docs, style, refactor, test, chore
-   - Magic words: use "Part of <issue-id>" during implementation, "Closes <issue-id>" on the final commit
 
 Do not modify any other files.
 ```

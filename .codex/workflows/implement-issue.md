@@ -14,7 +14,7 @@ prepare the issue for efficient human review with a review-ready summary.
   further.
 - If the implementation reveals a material flaw in the plan, stop and route to
   the revise-plan workflow instead of silently changing direction.
-- Commit in small, logical steps using the dev workflow conventions.
+- Commit in small, logical steps using the git conventions below.
 - Consult project skills to fill gaps in the approved plan, not to redesign it.
 - When external library behavior may have changed, verify against official docs
   before relying on memory.
@@ -35,7 +35,7 @@ Review:
 #### If the issue is in `Planning`
 
 - move the issue to `In Progress` if Linear is available
-- create the implementation branch using repo conventions
+- create the implementation branch using this convention: `<type>/<issue-id>-short-desc` (e.g. `feat/CC-123-add-login-page`) — types: `feat`, `fix`, `docs`, `chore`
 - reconfirm the planned scope before writing code
 
 #### If the issue is in `In Review`
@@ -136,7 +136,10 @@ If testing cannot be completed:
 
 Once the planned work is complete:
 
-- ensure changes are committed
+- ensure all changes are committed using this format:
+  - During implementation: `<type>(<scope>): <subject> (Part of <issue-id>)`
+  - Final commit: `<type>(<scope>): <subject> (Closes <issue-id>)`
+  - Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 - push the branch if remote workflow is active
 - confirm acceptance criteria appear satisfied
 - move the issue to `In Review` if Linear is available
