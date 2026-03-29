@@ -30,7 +30,7 @@ Test commands: [e.g. pnpm test for unit tests, pnpm test:e2e for E2E — or "non
 Please do the following:
 
 1. Read my product spec at .codex/docs/SPEC.pdf.
-2. Copy AGENTS-TEMPLATE.md to AGENTS.md — replace [PROJECT_NAME] with the project name, [PROJECT_DESCRIPTION] with the one-line description, and [PACKAGE_MANAGER] with the package manager above. Do not modify AGENTS-TEMPLATE.md.
+2. Update AGENTS.md — replace [PROJECT_NAME] with the project name, [PROJECT_DESCRIPTION] with the one-line description, and [PACKAGE_MANAGER] with the package manager above.
 3. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
 4. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and product spec in SPEC.pdf (e.g. prefer server components, avoid new dependencies without justification).
 5. Rewrite .codex/briefs/test-runner.md — replace the placeholder test tooling section with the actual test framework and commands above.
