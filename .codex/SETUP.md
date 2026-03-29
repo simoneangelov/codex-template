@@ -8,7 +8,7 @@ The template is project-agnostic. Follow the steps below to make it yours.
 
 ## Step 1: Add your product spec
 
-Replace `.codex/docs/product-spec.md` with your actual product specification. This is the source of truth the `project-expert` agent will reference when answering planning questions that require product-level understanding.
+Replace `.codex/docs/SPEC.pdf` with your actual product specification. This is the source of truth the `project-expert` agent will reference when answering planning questions that require product-level understanding.
 
 Your spec should cover what the product does, who it's for, core features and flows, data model, tech stack, V1 scope, and known future plans.
 
@@ -31,7 +31,7 @@ Commit style: [e.g. Conventional Commits — feat, fix, chore, refactor, test, d
 
 Please do the following:
 
-1. Read my product spec at .codex/docs/product-spec.md.
+1. Read my product spec at .codex/docs/SPEC.pdf.
 2. Copy AGENTS-TEMPLATE.md to AGENTS.md — replace [PROJECT_NAME] with the project name, [PROJECT_DESCRIPTION] with the one-line description, and [PACKAGE_MANAGER] with the package manager above. Do not modify AGENTS-TEMPLATE.md.
 3. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
 4. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and spec (e.g. prefer server components, avoid new dependencies without justification).
