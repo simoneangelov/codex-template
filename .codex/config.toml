@@ -1,0 +1,4 @@
+# Repo-scoped Codex defaults for this project.
+# Shared behavior lives primarily in AGENTS.md.
+
+model_reasoning_effort = "high"
