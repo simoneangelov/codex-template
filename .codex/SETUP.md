@@ -26,8 +26,6 @@ One-line description: [ONE_SENTENCE_DESCRIPTION e.g. "a Next.js app that does X 
 Package manager: [e.g. pnpm, npm, yarn]
 Tech stack: [e.g. Next.js 14, TypeScript, Prisma, PostgreSQL, Vitest, Playwright]
 Test commands: [e.g. pnpm test for unit tests, pnpm test:e2e for E2E]
-Branch naming convention: [e.g. feature/<issue-id>-short-description]
-Commit style: [e.g. Conventional Commits — feat, fix, chore, refactor, test, docs]
 
 Please do the following:
 
@@ -36,7 +34,10 @@ Please do the following:
 3. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
 4. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and spec (e.g. prefer server components, avoid new dependencies without justification).
 5. Rewrite .codex/briefs/test-runner.md — replace the placeholder test tooling section with the actual test framework and commands above.
-6. Update .codex/workflows/implement-issue.md — add the branch naming convention and commit style above to the relevant steps.
+6. Update .codex/workflows/implement-issue.md — add these git conventions to the branch creation and commit steps:
+   - Branch naming: <type>/<issue-id>-short-desc (e.g. feat/CC-123-add-login-page) — types: feat, fix, docs, chore
+   - Commit format: <type>(<scope>): <subject> (<Magic-Word> <issue-id>) — types: feat, fix, docs, style, refactor, test, chore
+   - Magic words: use "Part of <issue-id>" during implementation, "Closes <issue-id>" on the final commit
 
 Do not modify any other files.
 ```
