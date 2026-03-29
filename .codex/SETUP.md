@@ -6,7 +6,15 @@ The template is project-agnostic. Follow the steps below to make it yours.
 
 ---
 
-## Step 1: Create your AGENTS.md
+## Step 1: Add your product spec
+
+Replace `.codex/docs/product-spec.md` with your actual product specification. This is the source of truth the `project-expert` agent will reference when answering planning questions that require product-level understanding.
+
+Your spec should cover what the product does, who it's for, core features and flows, data model, tech stack, V1 scope, and known future plans.
+
+---
+
+## Step 2: Create your AGENTS.md
 
 Create an `AGENTS.md` file at the root of your project. This is the global context file Codex loads automatically for every agent and command.
 
@@ -34,7 +42,7 @@ A minimal starting point:
 
 ---
 
-## Step 2: Run the setup prompt
+## Step 3: Run the setup prompt
 
 Copy the prompt below, fill in the placeholders, and paste it into Codex or Claude Code.
 
@@ -50,10 +58,11 @@ Commit style: [e.g. Conventional Commits — feat, fix, chore, refactor, test, d
 
 Please do the following:
 
-1. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
-2. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack (e.g. prefer server components, avoid new dependencies without justification).
-3. Rewrite .codex/briefs/test-runner.md — replace the placeholder test tooling section with the actual test framework and commands above.
-4. Update .codex/workflows/implement-issue.md — add the branch naming convention and commit style above to the relevant steps.
+1. Read my product spec at .codex/docs/product-spec.md.
+2. Rewrite .codex/briefs/repo-explorer.md — add the tech stack above so the agent knows what to look for when inspecting the repository.
+3. Rewrite .codex/briefs/solution-planner.md — add any architectural constraints or preferences implied by the tech stack and spec (e.g. prefer server components, avoid new dependencies without justification).
+4. Rewrite .codex/briefs/test-runner.md — replace the placeholder test tooling section with the actual test framework and commands above.
+5. Update .codex/workflows/implement-issue.md — add the branch naming convention and commit style above to the relevant steps.
 
 Do not modify any other files.
 ```

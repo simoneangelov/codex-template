@@ -5,6 +5,7 @@ project context.
 
 Research using:
 
+- `.codex/docs/product-spec.md` for product intent, scope, and feature context
 - repo context
 - git history
 - issue history
